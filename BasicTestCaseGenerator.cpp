@@ -6,7 +6,7 @@ using namespace std;
 
 string case_name;
 string nombre_de_archivo;
-string buildcase_name(int temp_num, string type_of_case) {
+string buildcase_name(int temp_num,const string &type_of_case) {
   string temporal_number, temporal_name;
   while (temp_num) {
     temporal_number.push_back((temp_num % 10) + '0');
